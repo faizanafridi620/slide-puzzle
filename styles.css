@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  font-size: 4rem;
+}
+body {
+  height: 100vh;
+  background-color: #cff598;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+  margin: 80px auto -50px;
+  background-size: cover;
+}
+.tile {
+  background: url(./images/QCMjFdY-5cm-per-second-wallpaper.jpg);
+  background-size: 500px 500px;
+  margin: 1.5px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition-duration: 0.5s;
+  -webkit-text-stroke: 0.5px white;
+  cursor: pointer;
+}
+.tile:nth-child(1){background-position: 0px 0px;}
+.tile:nth-child(2){background-position: -150px 0px;}
+.tile:nth-child(3){background-position: -300px 0px;}
+.tile:nth-child(4){background-position: 0px -150px;}
+.tile:nth-child(5){background-position: -150px -150px;}
+.tile:nth-child(6){background-position: -300px -150px;}
+.tile:nth-child(7){background-position: 0px -300px;}
+.tile:nth-child(8){background-position: -150px -300px;}
+
+.moves{
+  text-align: center;
+  font-size: 2rem;
+}
+.btn-reset{
+  padding: 20px 70px;
+  text-align: center;
+  background-color: #072300;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#btn{
+  display: flex;
+  justify-content: center;
+}
+
+#win-msg{
+  font-size: 4rem;
+}
+
+.msg-container{
+  margin: 50px 50px;
+  height: 5vmin;
+  align-items: center;
+  text-align: center;
+}
+.hide{
+  display: none;
+}
